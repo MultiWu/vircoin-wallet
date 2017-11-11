@@ -1,0 +1,11 @@
+language: c++
+
+script: make
+
+before_install:
+  - sudo apt-get install qt5-default
+  - sudo apt-get install build-essential
+  - sudo apt-get install cmake
+  - sudo apt-get install libboost1.55-all-dev
+  - sudo git clone https://github.com/OliwierGL/vircoin.git
+  - sudo mv vircoin cryptonote
